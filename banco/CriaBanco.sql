@@ -6,7 +6,7 @@ USE IFSP;
 
 CREATE TABLE cidade
 (
-    id  INT,
+    id  INT AUTO_INCREMENT,
     nome    VARCHAR(100),
     estado  VARCHAR(002),
     PRIMARY KEY(id)
@@ -21,11 +21,10 @@ CREATE TABLE cliente
     ativo   BOOL,
     id_cidade   INT,
     PRIMARY KEY(id),
-    CONSTRAINT FK_ClienteCidade 
-        FOREIGN KEY (id_cidade) REFERENCES cidade(id)
-)
+    CONSTRAINT FK_ClienteCidade FOREIGN KEY (id_cidade) REFERENCES cidade(id)
+);
 
-/*INSERT INTO cidade VALUES
+INSERT INTO cidade VALUES
 	(1, 'Birigui', 'SP'),
     (2, 'Bilac', 'SP'),
     (3, 'Betim', 'MG'),
@@ -46,4 +45,4 @@ UPDATE cidade SET nome = 'Bauru' WHERE id = 1;
 UPDATE cliente SET nome = 'Cássio Stersi' WHERE id = 1;
 UPDATE cliente SET id_cidade = 1 WHERE id_cidade = 4;
 DELETE FROM cidade WHERE id = 4;
-DELETE FROM cliente WHERE id = 1;*/
+DELETE FROM cliente WHERE id = 1;

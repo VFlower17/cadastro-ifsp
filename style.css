@@ -1,39 +1,79 @@
-header{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-}
+/* style.css */
 
-h1{
-    margin: 0;
-}
-
-nav {
-    margin: 0 auto;
-    padding: 10px;
-}
-
-nav ul{
-    list-style: none;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav li{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 12px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-}
-
-nav a:hover{
-    background-color: #fff;
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#b93e9e, #812c77, #3e1f47); /* Cor de fundo */
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    background-color: #282c34; /* Cor de fundo do cabeçalho */
+    padding: 40px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+@keyframes gradientAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 3em;
+    color: #61dafb; /* Azul claro */
+    margin-bottom: 30px;
+}
+
+/* Estilo dos botões */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px 0; /* Espaçamento vertical */
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: #61dafb; /* Azul claro */
+    color: #282c34; /* Texto escuro */
+    padding: 15px 25px; /* Espaçamento interno */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+nav ul li a:hover {
+    background-color: #21a1f1; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Eleva o botão */
+}
+
+/* Estilo para links visitados */
+nav ul li a:visited {
+    color: #282c34; /* Cor de texto para links visitados */
 }
