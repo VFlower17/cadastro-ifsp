@@ -9,11 +9,11 @@
 </head>
 <body>
     <div>
-        <h1>Deletar Cidade</h1>
+        <h1>Deletar Cliente</h1>
         <?php
             include('includes/conexao.php');
             $id = $_GET['id'];
-            $sql = "DELETE FROM cidade WHERE id = $id";
+            $sql = "DELETE FROM cliente WHERE id = $id";
             $result = mysqli_query($con, $sql);
             if($result){
                 echo "<h2>Dados deletados!</h2>";
@@ -26,7 +26,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="ListarCidades.php">Voltar</a>
+                    <a href="ListarClientes.php">Voltar</a>
                 </li>
                 <li>
                     <a href="Index.html">Página inicial</a>

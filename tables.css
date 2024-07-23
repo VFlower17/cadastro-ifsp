@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f7ff; /* Fundo suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+}
+
+div {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: fit-content; /* Largura do conteúdo */
+    height: fit-content; /* Altura do conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #007BFF; /* Azul */
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid #000;
+    background-color: lightgray;
+}
+th {
+    border: solid #000;
+}
+
+th[id="alt"]{
+    background-color: lightyellow;
+}
+
+th[id="del"]{
+    background-color: rgb(255, 220, 220);
+}
+
+table a {
+    text-decoration: none;
+    color: #333;
+}
+
+table a[id="alt"]:hover{
+    font-weight: bold;
+    color: #FFA500;
+}
+table a[id="del"]:hover{
+    font-weight: bold;
+    color: #DC143C;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+nav ul li {
+    margin: 10px;
+    display: list-item; /* Alinhamento horizontal */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Azul */
+    font-weight: bold; /* Texto em negrito */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

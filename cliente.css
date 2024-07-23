@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f7ff; /* Fundo suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+}
+
+form {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 300px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+}
+
+legend {
+    font-size: 1.8em;
+    color: #007BFF; /* Azul */
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%; /* Largura total */
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento vertical */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+button {
+    background-color: #007BFF; /* Azul */
+    color: white; /* Texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+    cursor: pointer; /* Mão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão */
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+nav ul li {
+    display: inline; /* Alinhamento horizontal */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Azul */
+    font-weight: bold; /* Texto em negrito */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

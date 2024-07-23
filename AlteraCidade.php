@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="AltCidade.css">
 </head>
 <body>
     <form action="AlteraCidadeExe.php" method="post">
@@ -47,7 +48,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">VOLTAR</a>
+                    <a href="ListarCidades.php">VOLTAR</a>
                 </li>
             </ul>
         </nav>

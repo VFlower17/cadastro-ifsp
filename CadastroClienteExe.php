@@ -11,21 +11,22 @@
     <?php
         include('includes/conexao.php');
         $nome = $_POST['nome'];
-        $estado = $_POST['estado'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
         
-        $sql = "INSERT INTO cidade (nome, estado) VALUES ('".$nome."','".$estado."')";
+        $sql = "INSERT INTO cliente (nome, email, senha) VALUES ('".$nome."','".$email."','".$senha."')";
         $result = mysqli_query($con,$sql);
         if($result){
-            echo "<h2>Dados cadastrados com sucesso!</h2>";
+            echo "<div><h2>Dados cadastrados com sucesso!</h2>";
             echo "<nav> <ul>";
-            echo "<li><a href='CadastroCliente.html'>Voltar</a></li>";
+            echo "<li><a href='CadastroCliente.php'>Voltar</a></li>";
             echo "<li><a href='Index.html'>Página Inicial</a></li>";
             echo "</ul></nav>";
         }
         else{
             echo "<h2>Erro ao cadastrar!</h2>".mysqli_error($con);
             echo "<nav> <ul>";
-            echo "<li><a href='CadastroCliente.html'>Voltar</a></li>";
+            echo "<li><a href='CadastroCliente.php'>Voltar</a></li>";
             echo "<li><a href='Index.html'>Página Inicial</a></li>";
             echo "</ul></nav>";
         }
